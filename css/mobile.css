@@ -1,0 +1,293 @@
+@media (max-width: 414px){
+
+  #wrapper{
+    margin: 0;
+    padding: 0;
+  }
+
+  header{
+    color: #fff;
+    padding-bottom: 0.5em;
+    position: relative;
+  }
+
+  main {
+    font-size: 12px;
+    height: 100%;
+  }
+
+  h2{
+    font-family: Consolas, Andale Mono, Lucida Console, Lucida Sans Typewriter, Monaco, Courier New, monospace;
+    font-weight: 600;
+  }
+
+  h2 a{
+    color: #000;
+    background-color: #fff;
+  }
+
+  h2 a:hover{
+    color: #fff;
+    background-color: crimson;
+  }
+
+  h3{
+    font-family: 'Consolas, Andale Mono, Lucida Console, Lucida Sans Typewriter, Monaco, Courier New, monospace;;
+    font-weight: 500;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background: #fff;
+    color: #713be3;
+  }
+                        /* MOBILE NAV STYLE STARTS HERE*/
+  nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 12px;
+  }
+
+  nav > ul {
+    margin-top: 0;
+    list-style: none;
+    display: block;
+  }
+
+  nav ul {
+    padding-left: 0;
+  }
+
+  ul > li {
+    display: inline-block;
+    position: relative;
+  }
+
+  ul > li > ul {
+    display: none;
+  }
+
+  ul > li:hover > ul {
+    display: none;
+  }
+
+  nav ul {
+    background-color: darkgreen;
+  }
+
+  li > a {
+    display: block;
+    padding: 10px;
+  }
+
+  ul > li > ul > li {
+    display: none;
+  }
+                        /*MOBILE NAV STYLE ENDS HERE*/
+                        /*MOBILE FOOTER STYLE STARTS HERE*/
+  footer {
+    position: fixed;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 12px;
+  }
+
+  footer > ul {
+    margin-bottom: 0;
+    margin-top: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  footer > ul > li{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  footer ul {
+    padding-left: 0;
+    background-color: crimson;
+  }
+
+  #home{
+    display: none;
+    position: relative;
+    right: 20px;
+    grid-area: home;
+  }
+
+  #email{
+    position: relative;
+    left: 25px;
+    grid-area: email;
+  }
+
+  #email{
+    position: relative;
+    left: 25px;
+    grid-area: email;
+  }
+
+  #engage {
+    position: relative;
+    left: 25px;
+    grid-area: engage;
+  }
+
+  #call{
+    position: relative;
+    left: 25px;
+    grid-area: call;
+  }
+                       
+
+             
+  #about main{
+    width: 100%;
+    z-index: -1;
+    padding-top: 8%;
+    padding-bottom: 0;
+    position: relative;
+    right: 5px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+      "history history hisotry"
+      "mission mission mission"
+      "meeting meeting meeting"
+      "dues dues dues"
+      "location location location";
+  }
+
+ #history{
+  grid-area: history;
+}
+
+#mission{
+  grid-area: mission;
+}
+
+#meeting{
+  grid-area: meeting;
+}
+
+#dues{
+  grid-area: dues;
+	
+}
+
+#location{
+  grid-area: location;
+   padding-bottom: 25px;
+  }
+                        
+  #photos main{
+    padding-left: 7%;
+    width: 94%;
+  }
+
+  #photos section{
+    max-width: 1160px;
+    padding-top: 10px;
+    display: grid;
+    padding-left: 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+      "item1 item2 item3"
+      "item4 item5 item6";
+  }
+
+  #photos section img{
+    position: relative;
+    right: 5px;
+    max-width: 115px;
+    max-height: 115px;
+  }
+
+  #item-1{
+    grid-area: item1;
+  }
+
+  #item-2{
+    grid-area: item2;
+  }
+
+  #item-3{
+    grid-area: item3;
+  }
+
+  #item-4{
+    grid-area: item4;
+  }
+
+  #item-5{
+    grid-area: item5;
+  }
+
+  #item-6{
+    grid-area: item6;
+  }
+
+  
+  #events{
+    width: 100%;
+    padding-left: 10%;
+    padding-top: 35px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 25px;
+    grid-template-areas:
+      "election election"
+      "tailgate tailgate"
+    padding-bottom: 100px;
+  }
+
+  #events section article p{
+    line-height: 22px;
+  }
+
+  #election{
+    grid-area: election;
+  }
+
+  #tailgate{
+    grid-area: tailgate;
+  }
+
+ #exec{
+    width: 100%;
+    padding-left: 10%;
+    padding-top: 35px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 25px;
+    grid-template-areas:
+      "pres pres"
+      "treas treas"
+    padding-bottom: 100px;
+  }
+
+  #exec section article p{
+    line-height: 22px;
+  }
+
+  #pres{
+    grid-area: pres;
+  }
+
+  #treas{
+    grid-area: treas;
+  }
